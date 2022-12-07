@@ -1,5 +1,5 @@
 const Sequelize = require('sequelize');
-require('dotenv')
+require('dotenv').config({path: __dirname+'/../.env'})
 // adding dotenv file so that password login is hidden 
 
 let sequelize;
