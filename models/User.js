@@ -11,7 +11,6 @@ class User extends Model {
     }
 }
 
-
 User.init(
     {
         // define an ID column
@@ -24,13 +23,13 @@ User.init(
         // define a username column
         username: {
             type: DataTypes.STRING,
-            allowNull: false
+            allowNull: false,
+            
         },
         // define a email column
         email: {
             type: DataTypes.STRING,
             allowNull: false,
-            unique: true,
             validate: {
                 isEmail: true,
             }

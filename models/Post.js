@@ -13,22 +13,30 @@ Post.init(
             primaryKey: true,
             autoIncrement: true
         },
-        title: {
+
+        postTitle: {
             type: DataTypes.STRING,
-            allowNull: false
+            validate: {
+                //only allow a max of 60 characters for Post title
+                max: 60,
+            }
+            
         },
-        post_content: {
+        postContent: {
             type: DataTypes.TEXT,
-            allowNull: false
+            
         },
-        user_id: {
+
+        userId: {
             type: DataTypes.INTEGER,
             references: {
                 model: 'user',
                 key: 'id'
-            }
+            },
+            allowNull: false
+        },
 
-        }
+
 
     },
     {

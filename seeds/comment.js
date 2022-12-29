@@ -3,37 +3,37 @@ const { Comment } = require('../models');
 const commentData = [
 
     {
-        comment_text: "True",
-        user_id: 2,
-        post_id: 3,
+        commentContent: "True",
+        userid: 2,
+        postid: 3,
     },
     {
-        comment_text: "unbelievable",
-        user_id: 2,
-        post_id: 5,
+        commentContent: "unbelievable",
+        userid: 2,
+        postid: 5,
     },
     {
-        comment_text: "i feel the same way",
-        user_id: 2,
-        post_id: 3,
+        commentContent: "i feel the same way",
+        userid: 2,
+        postid: 3,
     },
     {
-        comment_text: "Nice",
-        user_id: 3,
+        commentContent: "Nice",
+        user_d: 3,
         post_id: 5
     },
     {
-        comment_text: "i don't think so",
+        commentContent: "i don't think so",
         user_id: 2,
         post_id: 1,
     },
     {
-        comment_text: "cool story bro",
+        commentContent: "cool story bro",
         user_id: 5,
         post_id: 3,
     },
     {
-        comment_text: "will follow this blog",
+        commentContent: "will follow this blog",
         user_id: 3,
         post_id: 2
     },
