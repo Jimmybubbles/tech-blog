@@ -2,10 +2,18 @@ const router = require('express').Router();
 const { Post, User, Comment } = require('../../config/connection');
 const withAuth = require('../../utils/auth')
 
-// create route for post
-router.get('/', (req, res) =>  {
-    const body = req.body;
-    console.log(req.session.userId)
-})
+// get all posts
+
+
+// get a single post
+
+
+// create a post
+
+
+// update a poste title
+
+
+// delete a post
 
 module.exports = router;

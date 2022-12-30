@@ -20,7 +20,6 @@ Post.init(
                 //only allow a max of 60 characters for Post title
                 max: 60,
             }
-            
         },
         postContent: {
             type: DataTypes.TEXT,

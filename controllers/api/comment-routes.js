@@ -2,14 +2,18 @@ const router = require('express').Router();
 const { Comment } = require('../../models');
 const withAuth = require('../../utils/auth')
 
-router.get('/', (req, res) => {
-    Comment.create({ ...req.body, userId: req.session.user_id })
-    .then(newComment => {
-        res.json(newComment);
-    })
-    .catch(err => {
-        res.status(500).json(err);
-    });
-});
+// route to get all the comments
+
+
+// route to get 1 comment
+
+
+// route to create a comment
+
+
+// route to update a comment
+
+
+// route to delete a comment
 
 module.exports = router
