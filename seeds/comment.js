@@ -4,38 +4,38 @@ const commentData = [
 
     {
         commentContent: "True",
-        userid: 2,
-        postid: 3,
+        userId: 2,
+        postId: 3,
     },
     {
         commentContent: "unbelievable",
-        userid: 2,
-        postid: 5,
+        userId: 2,
+        postId: 5,
     },
     {
         commentContent: "i feel the same way",
-        userid: 2,
-        postid: 3,
+        userId: 2,
+        postId: 3,
     },
     {
         commentContent: "Nice",
-        user_d: 3,
-        post_id: 5
+        userId: 3,
+        postId: 5
     },
     {
         commentContent: "i don't think so",
-        user_id: 2,
-        post_id: 1,
+        userId: 2,
+        postId: 1,
     },
     {
         commentContent: "cool story bro",
-        user_id: 5,
-        post_id: 3,
+        userId: 5,
+        postId: 3,
     },
     {
         commentContent: "will follow this blog",
-        user_id: 3,
-        post_id: 2
+        userId: 3,
+        postId: 2
     },
 ];
 
