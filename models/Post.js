@@ -34,6 +34,12 @@ Post.init(
             },
             allowNull: false
         },
+        
+        dateCreated: {
+            type: DataTypes.DATEONLY,
+            allowNull: false,
+            defaultValue: DataTypes.NOW,
+        }
 
 
 
