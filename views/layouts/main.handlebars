@@ -10,32 +10,37 @@
     <link rel="stylesheet" href="/public/css/style.css">
 </head>
 
-<body class="flex-column min-100-vh">
-    <nav class="navbar">
+<body>
+    <div class="wrapper">
 
-        <ul class="flex-row">
-            <li class="li-inline nav-item"><a class="link" href="/">Home</a></li>
-            <li class="li-inline nav-item"><a class="link" href="/dashboard">Dashboard</a></li>
-            <li class="li-inline nav-item"><a class="link" href="#" id="logout-link">Logout</a></li>
-        </ul>
+        <header class="hero">
+            <div>
+                <nav class="navbar">
+                    <a class="link" href="/">HOME</a>
+                    <a class="link" href="/dashboard">DASH BOARD</a>
+                    {{#if loggedIn}}
+                    <a class="link" href="/" id='logout'>LOG OUT</a>
+                    {{else}}
+                    <a class="link" href='/login'>LOGIN</a>
+                    {{/if}}
+                </nav>
+            </div>
 
-    </nav>
-
-    <header class="hero">
-        <hi class="app-title"><a href="/dashboard">Your Dashboard</a></hi>
-    </header>
+            <hi class="app-title"><i class="fab "></i>Tech Blog</hi>
+        </header>
 
 
 
-    <main class="col-auto">
-        {{{body}}}
-    </main>
+        <main class="col-auto">
+            {{{body}}}
+        </main>
+    </div>
 
-    <footer class="footer">
-        <a href="/dashboard/new"> New Post</a>
-    </footer>
+    {{#if loggedIn}}
+    <script src="/public/js/logout.js"></script>
+    {{/if}}
 
-</body>
+    </body>
 
 
 
